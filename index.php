@@ -1,0 +1,1 @@
+<p>・<a href="/php_practice/FizzBuzz/fizzbuzz.php">FizzBuzz</a></p>

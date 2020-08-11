@@ -27,4 +27,12 @@ function getTodo(){
     return $result;
 }
 
+function delete($id){
+    $dbh = dbConnect();
+    $stmt = $dbh->prepare('DELETE FROM Todo where id =:id');
+    $stmt->bindValue(':id', (int)$id, PDO::PARAM_INT);
+    $stmt->execute();
+    echo '削除しました';
+}
+
 ?>

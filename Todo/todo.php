@@ -15,8 +15,16 @@ $todoData = getTodo();
 <body>
     <h2>Todoリスト</h2>
     <h3><a href="/php_practice/Todo/form.php">新規作成</a></h3>
-    <?php foreach($todoData as $todo): ?>
-    <p>・<?php echo $todo['content']; ?></p>
-    <?php endforeach; ?>
+    <table>
+        <?php foreach($todoData as $todo): ?>
+        <tr>
+            <th><p>・<?php echo $todo['content']; ?></p></th>
+            <th><a href="/php_practice/Todo/todo_delete.php?id=<?php echo $todo['id'] ?>">削除</a></th>
+        </tr>
+        <?php endforeach; ?>
+    </table>
+    
+    
+    
 </body>
 </html>

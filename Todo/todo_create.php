@@ -24,3 +24,5 @@ try{
 }
 
 ?>
+
+<a href="/php_practice/Todo/todo.php">一覧へ戻る</a>
